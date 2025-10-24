@@ -79,18 +79,25 @@ body {
 
 .card {
   background: white;
-  padding: 25px 15px;
+  padding: 20px 15px;
   border-radius: 15px;
-  min-width: 200px;
-  max-width: 220px;
+  min-width: 180px;
+  max-width: 200px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
   transition: transform 0.3s;
+  text-align: center;
 }
 
 .card:hover {
   transform: translateY(-10px);
+}
+
+.card img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 10px;
 }
 
 /* Contact Section */
