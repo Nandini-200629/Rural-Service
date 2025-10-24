@@ -7,15 +7,14 @@ body {
 
 /* Hero Section */
 .hero {
-  position: relative;
-  height: 100vh;
-  background: url("https://images.unsplash.com/photo-1572947650440-e8e1ae99b3cf?auto=format&fit=crop&w=1600&q=80")
-    no-repeat center center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #2e7d32, #66bb6a); /* green gradient */
+  color: white;
+  border-radius: 0 0 40px 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
+
 
 .overlay {
   background-color: rgba(0, 0, 0, 0.6);
