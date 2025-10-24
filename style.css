@@ -13,8 +13,19 @@ body {
   background: url('hero.jpg') no-repeat center center;
   background-size: cover;
   padding: 100px 20px;
-  color: white;
+  text-align: center;
   text-shadow: 1px 1px 2px black;
+}
+
+.hero h1 {
+  color: #28a745; /* Green welcome text */
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: white;
+  font-size: 20px;
 }
 
 /* Button */
@@ -34,6 +45,15 @@ button:hover {
 }
 
 /* Services Section */
+.services {
+  padding: 50px 20px;
+}
+
+.services h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
 .service-list {
   list-style: none;
   padding: 0;
@@ -56,10 +76,12 @@ footer {
   color: white;
   padding: 20px;
 }
+
 footer a {
   color: #ffcc00;
   text-decoration: none;
 }
+
 footer a:hover {
   text-decoration: underline;
 }
