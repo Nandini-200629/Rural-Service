@@ -1,4 +1,5 @@
 /* General */
+/* General */
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -9,23 +10,15 @@ body {
 .hero {
   text-align: center;
   padding: 100px 20px;
-  background: linear-gradient(135deg, #2e7d32, #66bb6a);
+  background: linear-gradient(135deg, #2e7d32, #66bb6a); /* green gradient */
   color: white;
   border-radius: 0 0 40px 40px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-
-.overlay {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 50px;
-  border-radius: 15px;
-  color: #fff;
-}
-
 .hero h1 {
   font-size: 2.8rem;
-  color: #90ee90;
+  color: #e6ffcc;
 }
 
 .hero span {
@@ -38,8 +31,8 @@ body {
 }
 
 .btn {
-  background: linear-gradient(90deg, #e6ffe6, #ccffcc);
-  color: #006600;
+  background: linear-gradient(90deg, #e6ffe6, #ccffcc); /* light green button */
+  color: #2e7d32;
   padding: 14px 30px;
   border-radius: 30px;
   text-decoration: none;
@@ -67,6 +60,7 @@ body {
   color: #006d5b;
   margin-bottom: 40px;
   letter-spacing: 1px;
+  font-weight: bold;
 }
 
 .service-grid {
