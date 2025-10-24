@@ -1,45 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rural Help Center</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <!-- Hero Section -->
 <section class="hero">
-  <h1>Welcome to Rural Help Center</h1>
-  <p>Book local services easily from your village</p>
-  <a href="https://forms.gle/4EdbSEzNJBmkTqGF7" target="_blank">
-    <button>Book a Service</button>
-  </a>
+  <div class="hero-content">
+    <h1>Welcome to Rural Help Center</h1>
+    <p>Book local services easily from your village</p>
+    <a class="book-link" href="https://forms.gle/4EdbSEzNJBmkTqGF7" target="_blank" rel="noopener">
+      <button type="button" class="btn-primary">Book a Service</button>
+    </a>
+  </div>
 </section>
 
 <!-- Services Section -->
-<section>
+<section class="services">
   <h2>Our Services</h2>
-  <ul class="service-list">
-    <li>🛠 Plumbing</li>
-    <li>📱 Mobile repair</li>
-    <li>🚜 Farm equipment repair</li>
-    <li>💧 Water Pump Servicing</li>
-    <li>📚 Book resale</li>
-    <li>🔧 Equipment rentals</li>
-  </ul>
+  <div class="service-cards">
+    <div class="card">
+      <img src="https://img.icons8.com/emoji/48/000000/wrench-emoji.png" alt="Plumbing">
+      <p class="service-title">Plumbing</p>
+      <p class="service-desc">Fix leaks, taps, and pipelines efficiently.</p>
+    </div>
+    <div class="card">
+      <img src="https://img.icons8.com/emoji/48/000000/mobile-phone-emoji.png" alt="Mobile Repair">
+      <p class="service-title">Mobile Repair</p>
+      <p class="service-desc">Repair smartphones and electronic devices.</p>
+    </div>
+    <div class="card">
+      <img src="https://img.icons8.com/emoji/48/000000/tractor.png" alt="Farm Equipment Repair">
+      <p class="service-title">Farm Equipment Repair</p>
+      <p class="service-desc">Repair tractors, pumps, and farm tools.</p>
+    </div>
+    <div class="card">
+      <img src="https://img.icons8.com/emoji/48/000000/droplet-emoji.png" alt="Water Pump Servicing">
+      <p class="service-title">Water Pump Servicing</p>
+      <p class="service-desc">Maintain and repair water pumps.</p>
+    </div>
+    <div class="card">
+      <img src="https://img.icons8.com/emoji/48/000000/books-emoji.png" alt="Book Resale">
+      <p class="service-title">Book Resale</p>
+      <p class="service-desc">Buy or sell used books in your area.</p>
+    </div>
+    <div class="card">
+      <img src="https://img.icons8.com/emoji/48/000000/toolbox-emoji.png" alt="Equipment Rentals">
+      <p class="service-title">Equipment Rentals</p>
+      <p class="service-desc">Rent tools and equipment for short-term use.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact">
+  <h2>Contact Us</h2>
+  <div class="contact-info">
+    <p>Email: <a href="mailto:ruralservice@gmail.com">ruralservice@gmail.com</a></p>
+    <p>Phone: <a href="tel:+919876543210">+91 9876543210</a></p>
+    <p>WhatsApp: <a href="https://wa.me/919876543210" target="_blank" rel="noopener">Chat with us</a></p>
+  </div>
+  <div class="social-links">
+    <p>Follow us: 
+      <a href="#">Facebook</a> | 
+      <a href="#">Instagram</a>
+    </p>
+  </div>
 </section>
 
 <!-- Footer -->
 <footer>
-  <p>Contact: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-  <p>Follow us: 
-    <a href="#">Facebook</a> | 
-    <a href="#">WhatsApp</a> | 
-    <a href="#">Instagram</a>
-  </p>
   <p>© 2025 Rural Help Center</p>
 </footer>
 
 </body>
 </html>
+
