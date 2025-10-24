@@ -9,7 +9,7 @@ body {
 .hero {
   text-align: center;
   padding: 100px 20px;
-  background: linear-gradient(135deg, #2e7d32, #66bb6a); /* green gradient */
+  background: linear-gradient(135deg, #2e7d32, #66bb6a);
   color: white;
   border-radius: 0 0 40px 40px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
