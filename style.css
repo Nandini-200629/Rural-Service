@@ -1,5 +1,4 @@
 /* General */
-/* General */
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -14,6 +13,14 @@ body {
   color: white;
   border-radius: 0 0 40px 40px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.hero .logo {
+  width: 180px;          /* Adjust logo size */
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .hero h1 {
@@ -31,25 +38,19 @@ body {
 }
 
 .btn {
-  background: linear-gradient(90deg, #ccffcc, #e6ffe6); /* light green gradient */
-  color: #006400; /* dark green text for contrast */
+  background: linear-gradient(90deg, #ccffcc, #e6ffe6); /* light green button */
+  color: #006400;
   padding: 14px 30px;
   border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
-  border: 2px solid #00cc44; /* subtle green border */
+  border: 2px solid #00cc44;
   box-shadow: 0 4px 10px rgba(0, 204, 68, 0.4);
   transition: 0.3s ease;
 }
 
 .btn:hover {
-  background: linear-gradient(90deg, #e6ffe6, #ccffcc); /* reverse gradient on hover */
-  transform: scale(1.07); /* small pop effect */
-}
-
-
-.btn:hover {
-  background: linear-gradient(90deg, #ccffcc, #e6ffe6);
+  background: linear-gradient(90deg, #e6ffe6, #ccffcc);
   transform: scale(1.07);
 }
 
@@ -146,3 +147,4 @@ footer {
   padding: 15px;
   font-size: 0.9rem;
 }
+
