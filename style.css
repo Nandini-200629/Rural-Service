@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #fdf5e6;
+  background: #e0f7e9; /* soft light green background */
   color: #333;
   text-align: center;
 }
@@ -24,7 +24,7 @@ body {
 }
 
 .hero p {
-  color: #28a745;
+  color: white;
   font-size: 20px;
 }
 
@@ -60,7 +60,7 @@ button:hover {
 }
 
 .service-list li {
-  background: white;
+  background: #d4f0d8; /* light green cards */
   margin: 10px auto;
   padding: 15px;
   max-width: 400px;
@@ -72,14 +72,16 @@ button:hover {
 
 /* Footer */
 footer {
-  background: #333;
+  background: #2e7d32; /* dark green footer */
   color: white;
   padding: 20px;
+  text-align: center;
 }
 
 footer a {
-  color: #ffcc00;
+  color: #ffeb3b; /* yellow links */
   text-decoration: none;
+  margin: 0 5px;
 }
 
 footer a:hover {
