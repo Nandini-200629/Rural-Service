@@ -1,8 +1,7 @@
-/* General Styles */
+/* General */
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  color: #fff;
   background-color: #f5f5f5;
 }
 
@@ -10,7 +9,7 @@ body {
 .hero {
   position: relative;
   height: 100vh;
-  background: url("https://images.unsplash.com/photo-1562158070-57f8da3b1b3b?auto=format&fit=crop&w=1600&q=80")
+  background: url("https://images.unsplash.com/photo-1572947650440-e8e1ae99b3cf?auto=format&fit=crop&w=1600&q=80")
     no-repeat center center/cover;
   display: flex;
   align-items: center;
@@ -19,16 +18,15 @@ body {
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.55);
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 50px;
-  border-radius: 20px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  color: #fff;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  color: #00ff88;
-  margin-bottom: 15px;
+  font-size: 2.8rem;
+  color: #90ee90;
 }
 
 .hero span {
@@ -38,61 +36,74 @@ body {
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 25px;
-  color: #fff;
 }
 
 .btn {
-  background-color: #00b894;
-  color: white;
-  padding: 12px 28px;
-  border-radius: 25px;
+  background: linear-gradient(90deg, #00b894, #00ff99);
+  color: #fff;
+  padding: 14px 30px;
+  border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
-  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 255, 150, 0.4);
+  transition: 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #009970;
+  background: linear-gradient(90deg, #00ff99, #00b894);
+  transform: scale(1.05);
 }
 
 /* Services Section */
 .services {
-  background-color: #1b4332;
   text-align: center;
   padding: 60px 20px;
+  background: #1b4332;
+  color: #fff;
 }
 
 .services h2 {
-  color: #80ffdb;
   font-size: 2rem;
-  margin-bottom: 20px;
+  color: #80ffdb;
+  margin-bottom: 40px;
 }
 
-.service-list {
-  list-style: none;
-  padding: 0;
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
 }
 
-.service-list li {
+.service-card {
   background: rgba(255, 255, 255, 0.1);
-  display: inline-block;
-  margin: 10px;
-  padding: 15px 25px;
-  border-radius: 10px;
-  font-size: 1.1rem;
-  transition: transform 0.3s, background 0.3s;
+  border-radius: 15px;
+  padding: 25px;
+  transition: 0.3s;
 }
 
-.service-list li:hover {
-  background: rgba(255, 255, 255, 0.25);
+.service-card:hover {
   transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.service-card i {
+  font-size: 2.5rem;
+  color: #00ffcc;
+  margin-bottom: 10px;
+}
+
+.service-card h3 {
+  color: #ffea00;
 }
 
 /* Contact Section */
 .contact {
   background-color: #081c15;
   text-align: center;
-  padding: 50px 20px;
+  padding: 60px 20px;
+  color: #e0e0e0;
 }
 
 .contact h2 {
@@ -100,19 +111,19 @@ body {
   margin-bottom: 15px;
 }
 
-.contact p {
-  color: #e0e0e0;
-  margin: 8px 0;
-}
-
-.contact a {
-  color: #80ffdb;
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #25d366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
   text-decoration: none;
-  font-weight: bold;
+  transition: 0.3s;
 }
 
-.contact a:hover {
-  text-decoration: underline;
+.whatsapp-btn:hover {
+  background-color: #1da851;
 }
 
 /* Footer */
