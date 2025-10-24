@@ -31,16 +31,22 @@ body {
 }
 
 .btn {
-  background: linear-gradient(90deg, #e6ffe6, #ccffcc); /* light green button */
-  color: #2e7d32;
+  background: linear-gradient(90deg, #ccffcc, #e6ffe6); /* light green gradient */
+  color: #006400; /* dark green text for contrast */
   padding: 14px 30px;
   border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
-  box-shadow: 0 4px 10px rgba(0, 255, 150, 0.4);
+  border: 2px solid #00cc44; /* subtle green border */
+  box-shadow: 0 4px 10px rgba(0, 204, 68, 0.4);
   transition: 0.3s ease;
-  border: 2px solid #009970;
 }
+
+.btn:hover {
+  background: linear-gradient(90deg, #e6ffe6, #ccffcc); /* reverse gradient on hover */
+  transform: scale(1.07); /* small pop effect */
+}
+
 
 .btn:hover {
   background: linear-gradient(90deg, #ccffcc, #e6ffe6);
