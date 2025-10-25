@@ -3,68 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rural Service</title>
+  <title>Rural Help Center</title>
   <link rel="stylesheet" href="style.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-
-  <!-- Header / Navbar -->
+  <!-- Navigation -->
   <nav class="navbar">
     <div class="logo">
-      <h2>Rural Service</h2>
+      <h2>Rural Service Center</h2>
     </div>
     <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#services">Services</a></li>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#services">Our Services</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- App Home Section -->
-  <section class="app-home" id="home">
-    <div class="language-toggle">
-      English ➜ <span>Local Language</span>
-    </div>
-
-    <a href="https://forms.gle/4EdbSEzNJBmkTqGF7" target="_blank" class="book-btn">
-      Book a Service
-    </a>
-
-    <div class="app-services">
-      <div class="app-card">
-        <i class="fa-solid fa-tractor"></i>
-        <p>Farm Equipment</p>
-      </div>
-
-      <div class="app-card">
-        <i class="fa-solid fa-wrench"></i>
-        <p>Plumbing</p>
-      </div>
-
-      <div class="app-card">
-        <i class="fa-solid fa-hand-holding-water"></i>
-        <p>Water Pumps</p>
-      </div>
-
-      <div class="app-card">
-        <i class="fa-solid fa-mobile-screen"></i>
-        <p>Mobile Repair</p>
-      </div>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="overlay">
+      <h1>Welcome to <span>Rural Service Center</span></h1>
+      <p>Book local services easily from your village</p>
+      <a href="https://forms.gle/4EdbSEzNJBmkTqGF7" target="_blank" class="btn">
+        <i class="fa-solid fa-handshake"></i> Book a Service
+      </a>
     </div>
   </section>
 
-  <!-- About Section -->
+  <!-- About Us Section -->
   <section class="about" id="about">
     <h2>About Us</h2>
     <p>
-      Rural Service aims to bring essential repair and maintenance services directly to rural and semi-rural areas.
-      From plumbing and mobile repair to farm machinery and water pumps — we connect skilled local technicians
-      with nearby customers for fast, affordable help.
+      Rural Service Center aims to bring essential services directly to villages. 
+      We connect local professionals for plumbing, mobile repair, farm equipment servicing, and more. 
+      Our goal is to make life easier for rural households by providing trusted, convenient, and affordable services.
     </p>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h2><strong>Our Services</strong></h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <i class="fa-solid fa-wrench icon plumbing"></i>
+        <h3>Plumbing</h3>
+        <p>Fix water leaks, taps, and pipes quickly.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fa-solid fa-mobile-screen icon mobile"></i>
+        <h3>Mobile Repair</h3>
+        <p>Repair smartphones and accessories.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fa-solid fa-tractor icon farm"></i>
+        <h3>Farm Equipment</h3>
+        <p>Repair and service tractors and machines.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fa-solid fa-water icon pump"></i>
+        <h3>Water Pump Servicing</h3>
+        <p>Clean, repair and maintain water pumps.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fa-solid fa-book-open icon book"></i>
+        <h3>Book Resale</h3>
+        <p>Buy and sell used educational books.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fa-solid fa-screwdriver-wrench icon rent"></i>
+        <h3>Equipment Rentals</h3>
+        <p>Rent farm and household equipment easily.</p>
+      </div>
+    </div>
   </section>
 
   <!-- Contact Section -->
@@ -77,32 +94,15 @@
         <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
       </a>
     </p>
+    <p>Follow us: 
+      <a href="#">Facebook</a> | 
+      <a href="#">Instagram</a>
+    </p>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Rural Service | Made with ❤️ for Rural India</p>
+    <p>© 2025 Rural Help Center | Made with ❤️ for Rural India</p>
   </footer>
-
-  <!-- Bottom Navigation -->
-  <div class="bottom-nav">
-    <a href="#home" class="active">
-      <i class="fa-solid fa-house"></i>
-      Home
-    </a>
-    <a href="#">
-      <i class="fa-solid fa-list-check"></i>
-      My Bookings
-    </a>
-    <a href="#">
-      <i class="fa-solid fa-circle-info"></i>
-      Coordinator Help
-    </a>
-    <a href="#">
-      <i class="fa-solid fa-user"></i>
-      Profile
-    </a>
-  </div>
-
 </body>
 </html>
