@@ -10,163 +10,119 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 50px;
-  background-color: #2e8b57; /* green navbar */
+  padding: 15px 40px;
+  background-color: #2e8b57;
   color: white;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-.navbar .logo h2 {
+.logo h2 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #fff;
 }
 
-.navbar .nav-links {
+.nav-links {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 20px;
 }
 
-.navbar .nav-links li a {
+.nav-links a {
   text-decoration: none;
   color: white;
   font-weight: 600;
   transition: 0.3s;
 }
 
-.navbar .nav-links li a:hover {
-  color: #ffd700; /* gold color on hover */
+.nav-links a:hover {
+  color: #ffd700;
 }
 
-/* Hero Section */
-.hero {
+/* App Home Section */
+.app-home {
   text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(135deg, #2e7d32, #66bb6a); /* green gradient */
-  color: white;
-  border-radius: 0 0 40px 40px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  padding: 60px 20px;
 }
 
-.hero .logo {
-  width: 180px;          /* Adjust logo size */
-  height: auto;
+.language-toggle {
   margin-bottom: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  font-size: 0.9rem;
+  color: #2e7d32;
 }
 
-.hero h1 {
-  font-size: 2.8rem;
-  color: #e6ffcc;
-}
-
-.hero span {
-  color: #ffea00;
-}
-
-.hero p {
+.book-btn {
+  background-color: #6dbf73;
+  color: white;
   font-size: 1.2rem;
-  margin-bottom: 25px;
-}
-
-.btn {
-  background: linear-gradient(90deg, #ccffcc, #e6ffe6); /* light green button */
-  color: #006400;
-  padding: 14px 30px;
-  border-radius: 30px;
+  padding: 20px 50px;
+  border-radius: 100px;
   text-decoration: none;
-  font-weight: bold;
-  border: 2px solid #00cc44;
-  box-shadow: 0 4px 10px rgba(0, 204, 68, 0.4);
-  transition: 0.3s ease;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
+  transition: 0.3s;
 }
 
-.btn:hover {
-  background: linear-gradient(90deg, #e6ffe6, #ccffcc);
-  transform: scale(1.07);
+.book-btn:hover {
+  background-color: #4caf50;
+  transform: scale(1.05);
 }
 
-/* About Us Section */
+/* App Service Cards */
+.app-services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  justify-items: center;
+  max-width: 400px;
+  margin: auto;
+}
+
+.app-card {
+  background: white;
+  border: 2px solid #a5d6a7;
+  border-radius: 20px;
+  width: 150px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.app-card:hover {
+  transform: translateY(-5px);
+}
+
+.app-card i {
+  font-size: 2.5rem;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.app-card p {
+  font-weight: 600;
+  color: #1b5e20;
+}
+
+/* About Section */
 .about {
   text-align: center;
-  padding: 70px 20px;
-  background: #e6ffe6; /* light green background */
+  padding: 60px 20px;
+  background: #e6ffe6;
   color: #006400;
 }
 
 .about h2 {
-  font-size: 2.4rem;
-  margin-bottom: 20px;
-  font-weight: bold;
-  letter-spacing: 1px;
+  font-size: 2rem;
+  margin-bottom: 15px;
 }
 
 .about p {
-  max-width: 800px;
+  max-width: 700px;
   margin: auto;
-  font-size: 1.1rem;
-  line-height: 1.8;
-}
-
-/* Services Section */
-.services {
-  text-align: center;
-  padding: 70px 20px;
-  background: #f0fff0;
-  color: #333;
-}
-
-.services h2 {
-  font-size: 2.4rem;
-  color: #006d5b;
-  margin-bottom: 40px;
-  letter-spacing: 1px;
-  font-weight: bold;
-}
-
-.service-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.service-card {
-  background: #fff;
-  border-radius: 15px;
-  padding: 25px;
-  transition: 0.3s;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-}
-
-.service-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 6px 15px rgba(0, 100, 0, 0.2);
-}
-
-.service-card i {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-/* Icon Colors */
-.icon.plumbing { color: #00bcd4; }
-.icon.mobile { color: #ff9800; }
-.icon.farm { color: #4caf50; }
-.icon.pump { color: #03a9f4; }
-.icon.book { color: #9c27b0; }
-.icon.rent { color: #f44336; }
-
-.service-card h3 {
-  font-weight: bold;
-  color: #006400;
+  font-size: 1rem;
+  line-height: 1.7;
 }
 
 /* Contact Section */
@@ -180,7 +136,6 @@ body {
 .contact h2 {
   color: #00ffcc;
   margin-bottom: 15px;
-  font-weight: bold;
 }
 
 .whatsapp-btn {
@@ -207,3 +162,42 @@ footer {
   padding: 15px;
   font-size: 0.9rem;
 }
+
+/* Bottom Navigation */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #e8f5e9;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 2px solid #c8e6c9;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  color: #2e7d32;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.bottom-nav i {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+
+.bottom-nav a.active {
+  color: #1b5e20;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}
+
