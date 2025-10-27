@@ -3,80 +3,29 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   background-color: #f9f9f9;
-}
-
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 50px;
-  background-color: #2e8b57; /* green navbar */
-  color: white;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-.navbar .logo h2 {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #fff;
-}
-
-.navbar .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-}
-
-.navbar .nav-links li a {
-  text-decoration: none;
-  color: white;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.navbar .nav-links li a:hover {
-  color: #ffd700; /* gold color on hover */
+  color: #333;
 }
 
 /* Hero Section */
 .hero {
   text-align: center;
   padding: 100px 20px;
-  background: linear-gradient(135deg, #2e7d32, #66bb6a); /* green gradient */
+  background: linear-gradient(135deg, #2e7d32, #66bb6a);
   color: white;
   border-radius: 0 0 40px 40px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
-
-.hero .logo {
-  width: 180px;          /* Adjust logo size */
-  height: auto;
-  margin-bottom: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
 .hero h1 {
   font-size: 2.8rem;
   color: #e6ffcc;
 }
-
-.hero span {
-  color: #ffea00;
-}
-
+.hero span { color: #ffea00; }
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 25px;
 }
-
 .btn {
-  background: linear-gradient(90deg, #ccffcc, #e6ffe6); /* light green button */
+  background: linear-gradient(90deg, #ccffcc, #e6ffe6);
   color: #006400;
   padding: 14px 30px;
   border-radius: 30px;
@@ -86,32 +35,9 @@ body {
   box-shadow: 0 4px 10px rgba(0, 204, 68, 0.4);
   transition: 0.3s ease;
 }
-
 .btn:hover {
   background: linear-gradient(90deg, #e6ffe6, #ccffcc);
   transform: scale(1.07);
-}
-
-/* About Us Section */
-.about {
-  text-align: center;
-  padding: 70px 20px;
-  background: #e6ffe6; /* light green background */
-  color: #006400;
-}
-
-.about h2 {
-  font-size: 2.4rem;
-  margin-bottom: 20px;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-.about p {
-  max-width: 800px;
-  margin: auto;
-  font-size: 1.1rem;
-  line-height: 1.8;
 }
 
 /* Services Section */
@@ -121,15 +47,12 @@ body {
   background: #f0fff0;
   color: #333;
 }
-
 .services h2 {
   font-size: 2.4rem;
   color: #006d5b;
   margin-bottom: 40px;
-  letter-spacing: 1px;
   font-weight: bold;
 }
-
 .service-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -137,37 +60,35 @@ body {
   max-width: 1000px;
   margin: auto;
 }
-
 .service-card {
   background: #fff;
   border-radius: 15px;
   padding: 25px;
   transition: 0.3s;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
 }
-
+.service-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 .service-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 6px 15px rgba(0, 100, 0, 0.2);
 }
-
 .service-card i {
   font-size: 3rem;
   margin-bottom: 10px;
 }
-
-/* Icon Colors */
 .icon.plumbing { color: #00bcd4; }
 .icon.mobile { color: #ff9800; }
 .icon.farm { color: #4caf50; }
 .icon.pump { color: #03a9f4; }
 .icon.book { color: #9c27b0; }
 .icon.rent { color: #f44336; }
-
-.service-card h3 {
-  font-weight: bold;
-  color: #006400;
-}
+.service-card h3 { color: #006400; font-weight: bold; }
 
 /* Contact Section */
 .contact {
@@ -176,13 +97,11 @@ body {
   padding: 60px 20px;
   color: #e0e0e0;
 }
-
 .contact h2 {
   color: #00ffcc;
   margin-bottom: 15px;
   font-weight: bold;
 }
-
 .whatsapp-btn {
   display: inline-block;
   margin-top: 10px;
@@ -191,12 +110,17 @@ body {
   padding: 10px 20px;
   border-radius: 25px;
   text-decoration: none;
-  transition: 0.3s;
   font-weight: bold;
+  transition: 0.3s;
+  animation: bounce 2s infinite;
 }
+.whatsapp-btn:hover { background-color: #1da851; }
 
-.whatsapp-btn:hover {
-  background-color: #1da851;
+/* Bounce animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-10px);}
+  60% {transform: translateY(-5px);}
 }
 
 /* Footer */
@@ -206,4 +130,38 @@ footer {
   text-align: center;
   padding: 15px;
   font-size: 0.9rem;
-} Css code
+}
+
+/* Dark Mode Button */
+.dark-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+.dark-btn:hover { transform: scale(1.1); }
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+body.dark-mode .hero {
+  background: linear-gradient(135deg, #004d40, #00695c);
+}
+body.dark-mode .service-card {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+body.dark-mode footer {
+  background-color: #111;
+}
+
