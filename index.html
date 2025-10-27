@@ -4,25 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rural Help Center</title>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="logo">
-      <h2>Rural Service Center</h2>
-    </div>
-    <ul class="nav-links">
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#services">Our Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
   <!-- Hero Section -->
-  <section class="hero" id="hero">
+  <section class="hero">
     <div class="overlay">
       <h1>Welcome to <span>Rural Service Center</span></h1>
       <p>Book local services easily from your village</p>
@@ -32,55 +24,16 @@
     </div>
   </section>
 
-  <!-- About Us Section -->
-  <section class="about" id="about">
-    <h2>About Us</h2>
-    <p>
-      Rural Service Center aims to bring essential services directly to villages. 
-      We connect local professionals for plumbing, mobile repair, farm equipment servicing, and more. 
-      Our goal is to make life easier for rural households by providing trusted, convenient, and affordable services.
-    </p>
-  </section>
-
   <!-- Services Section -->
   <section class="services" id="services">
     <h2><strong>Our Services</strong></h2>
     <div class="service-grid">
-      <div class="service-card">
-        <i class="fa-solid fa-wrench icon plumbing"></i>
-        <h3>Plumbing</h3>
-        <p>Fix water leaks, taps, and pipes quickly.</p>
-      </div>
-
-      <div class="service-card">
-        <i class="fa-solid fa-mobile-screen icon mobile"></i>
-        <h3>Mobile Repair</h3>
-        <p>Repair smartphones and accessories.</p>
-      </div>
-
-      <div class="service-card">
-        <i class="fa-solid fa-tractor icon farm"></i>
-        <h3>Farm Equipment</h3>
-        <p>Repair and service tractors and machines.</p>
-      </div>
-
-      <div class="service-card">
-        <i class="fa-solid fa-water icon pump"></i>
-        <h3>Water Pump Servicing</h3>
-        <p>Clean, repair and maintain water pumps.</p>
-      </div>
-
-      <div class="service-card">
-        <i class="fa-solid fa-book-open icon book"></i>
-        <h3>Book Resale</h3>
-        <p>Buy and sell used educational books.</p>
-      </div>
-
-      <div class="service-card">
-        <i class="fa-solid fa-screwdriver-wrench icon rent"></i>
-        <h3>Equipment Rentals</h3>
-        <p>Rent farm and household equipment easily.</p>
-      </div>
+      <div class="service-card"><i class="fa-solid fa-wrench icon plumbing"></i><h3>Plumbing</h3><p>Fix water leaks, taps, and pipes quickly.</p></div>
+      <div class="service-card"><i class="fa-solid fa-mobile-screen icon mobile"></i><h3>Mobile Repair</h3><p>Repair smartphones and accessories.</p></div>
+      <div class="service-card"><i class="fa-solid fa-tractor icon farm"></i><h3>Farm Equipment</h3><p>Repair and service tractors and machines.</p></div>
+      <div class="service-card"><i class="fa-solid fa-water icon pump"></i><h3>Water Pump Servicing</h3><p>Clean, repair and maintain water pumps.</p></div>
+      <div class="service-card"><i class="fa-solid fa-book-open icon book"></i><h3>Book Resale</h3><p>Buy and sell used educational books.</p></div>
+      <div class="service-card"><i class="fa-solid fa-screwdriver-wrench icon rent"></i><h3>Equipment Rentals</h3><p>Rent farm and household equipment easily.</p></div>
     </div>
   </section>
 
@@ -102,7 +55,15 @@
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Rural Help Center | Made with ❤️ for Rural India</p>
+    <p>© 2025 Rural Help Center | Made with ❤ for Rural India</p>
   </footer>
+
+  <!-- Dark Mode Button -->
+  <button id="darkModeToggle" class="dark-btn">
+    <i class="fa-solid fa-moon"></i> Dark Mode
+  </button>
+
+  <!-- JS -->
+  <script src="script.js"></script>
 </body>
 </html>
